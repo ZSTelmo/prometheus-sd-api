@@ -1,2 +1,2 @@
 # prometheus-sd-api
-HTTP api for add hosts to prometheus 
+HTTP api for add targets to prometheus 
