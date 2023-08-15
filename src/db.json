@@ -1,0 +1,1 @@
+[{"job":"mysql","targets":"01.mydomain.com:9112"},{"job":"mysql","targets":"02.mydomain.com:9112"},{"job":"mysql","targets":"03.mydomain.com:9112"}]
