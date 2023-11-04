@@ -1,0 +1,7 @@
+
+remote_write:
+  - url: http://example.com/api/prometheus/write
+    write_relabel_configs:
+      - source_labels: [__name__]
+        regex: "(.*)"
+        target_label: metric_name
