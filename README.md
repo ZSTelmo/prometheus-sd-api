@@ -1,2 +1,2 @@
-# prometheus-sd-api
-HTTP api for add targets to prometheus 
+# prometheus-sd-api WIP
+HTTP api for add targets to prometheus
