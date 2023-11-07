@@ -3,15 +3,17 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 )
 
+// Label ...
 type Label struct {
 	Job      string `json:"job"`
-	Targests string `json:"targets"`
+	Targets string `json:"targets"`
 }
 
+// ReadFile ...
 func ReadFile() []Label {
 	file, err := os.Open("db.json")
 	if err != nil {
@@ -20,7 +22,7 @@ func ReadFile() []Label {
 
 	defer file.Close()
 
-	data, err := ioutil.ReadAll(file)
+	data, err := io.ReadAll(file)
 	if err != nil {
 		fmt.Println("Error reading file:", err)
 	}

@@ -1,13 +1,21 @@
 [
     {
         "job_name": "mysql",
-        "targets": "01.mydomain.com:9112"
+        "static_configs": {
+            "targets": [
+                "01.mydomain.com:9112"
+            ],
+            "labels": {}
+        }
     },
     {
         "job_name": "mysql",
-        "scrape_interval": "20s",
-        "scrape_timeout": "15s",
-        "targets": "02.mydomain.com:9112"
+        "static_configs": {
+            "targets": [
+                "02.mydomain.com:9112"
+            ],
+            "labels": {}
+        }
     },
     {
         "job_name": "mysql",
@@ -15,9 +23,34 @@
             "targets": [
                 "03.mydomain.com:9112"
             ],
-            "labels": {
-                "alias": "mysql-master"
-            }
+            "labels": {}
+        }
+    },
+    {
+        "job_name": "mysql-test",
+        "static_configs": {
+            "targets": [
+                "02.mydomain.com:78781"
+            ],
+            "labels": {}
+        }
+    },
+    {
+        "job_name": "mysql-test",
+        "static_configs": {
+            "targets": [
+                "02.mydomain.com:78781"
+            ],
+            "labels": {}
+        }
+    },
+    {
+        "job_name": "mysql-test",
+        "static_configs": {
+            "targets": [
+                "02.mydomain.com:78781"
+            ],
+            "labels": {}
         }
     }
 ]
